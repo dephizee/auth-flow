@@ -21,7 +21,7 @@ const SortableList:any = SortableContainer(({items}:any) => {
 
 export const Account = () => {
     const [loading, setLoading] = useState(false);
-    const [accounts, setAccounts] = useState(['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6']);
+    const [accounts, setAccounts] = useState([]);
     const onSortEnd :any = ({oldIndex, newIndex}:any) => {
         setAccounts(oldItems=>arrayMoveImmutable(oldItems, oldIndex, newIndex))
       };
