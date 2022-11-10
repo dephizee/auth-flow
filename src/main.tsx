@@ -1,15 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
 import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
 } from "react-router-dom";
 import { GetStarted } from './pages/get-started';
 import { Register } from './pages/register';
 import { Detail } from './pages/user-detail';
+import { FaceCapture } from './pages/face-capture';
+import { Term } from './pages/TERM';
+import { Account } from './pages/account';
+import { Success } from './pages/success';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,22 @@ const router = createBrowserRouter([
   {
     path: "detail",
     element: <Detail/>,
+  },
+  {
+    path: "face-capture",
+    element: <FaceCapture/>,
+  },
+  {
+    path: "term",
+    element: <Term/>,
+  },
+  {
+    path: "account",
+    element: <Account/>,
+  },
+  {
+    path: "success",
+    element: <Success/>,
   },
 ]);
 
